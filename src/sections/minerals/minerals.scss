@@ -1,0 +1,42 @@
+.minerals {
+  @media (max-width: 600px) {
+    padding-top: 0;
+  }
+  &__description {
+    max-width: 900px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    width: 100%;
+    max-width: 600px;
+    transform: translate3d(-50%, -50%, 1px);
+    z-index: 1;
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+  &__item {
+    margin-right: 30px;
+    color: var(--white);
+    font-family: 'AngleciaPro', serif;
+    will-change: transform;
+    & span {
+      display: block;
+      text-shadow: 1px 1px 3px #6c757d;
+      &:first-of-type {
+        font-size: 70px;
+        line-height: 1;
+      }
+      &:last-of-type {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.hero {
+  max-width: 1920px;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 186.844px;
+  //background: url('./images/bg-hero-sky.png') 50% 50% / cover var(--white) no-repeat;
+  @media (max-width: 768px) {
+    padding-top: 113px;
+  }
+  @media (max-width: 425px) {
+    padding-top: 110px;
+  }
+  @media (max-width: 400px) {
+    padding-top: 105px;
+  }
+  @media (max-width: 767px) {
+    height: 950px;
+    //background: url('./images/bg-hero-mobile.jpg') 50% 100% / cover var(--white) no-repeat;
+  }
+  &__content {
+    position: relative;
+    max-width: 1920px;
+    height: inherit;
+    margin: 0 auto;
+    z-index: 2;
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 100vw;
+      height: inherit;
+      background-color: var(--white);
+      z-index: 2;
+    }
+    &:after {
+      left: unset;
+      right: 100%;
+    }
+  }
+  &__container {
+    position: relative;
+    display: flex;
+    @media (max-width: 1279px) {
+      flex-direction: column;
+    }
+  }
+  &__picture {
+    margin: 160px 0 0 130px;
+    @media (max-width: 1279px) {
+      margin: 65px auto 0;
+    }
+    @media (max-width: 767px) {
+      width: 160px;
+    }
+  }
+  &__title {
+    max-width: 900px;
+  }
+  &__button {
+    display: none;
+    @media (max-width: 1279px) {
+      display: inline-block;
+      margin-top: 40px;
+    }
+  }
+  &__bg {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 1);
+    will-change: transform;
+    //z-index: 1;
+    @media (max-width: 1920px) {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__fontan {
+    position: fixed;
+    left: 60%;
+    bottom: -15%;
+    transform: translate3d(0%, 0, 1);
+    will-change: transform;
+    //z-index: 2;
+    @media (min-height: 1024px) {
+      bottom: 0;
+    }
+  }
+  &__sky {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    //z-index: 2;
+  }
+  &__cloud {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: unset;
+    z-index: 3;
+    &-wide {
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 42%;
+      left: 42%;
+      transform: rotate(-90deg);
+      transform-origin: center center;
+      z-index: 3;
+      @media (min-width: 1921px) {
+        display: block;
+      }
+      &.--first {
+        left: -42%;
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &__wl {
+    position: fixed;
+    left: 60%;
+    bottom: 0;
+    max-width: 30vw;
+    max-height: 81vh;
+  }
+  &__mountains {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    max-width: unset;
+    transform: translateX(-50%);
+    &.--first {
+      bottom: -1%;
+    }
+  }
+  &__wl,
+  &__cloud,
+  &__mountains,
+  &__sky,
+  &__fontan {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}

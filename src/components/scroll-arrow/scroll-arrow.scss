@@ -1,0 +1,33 @@
+.scroll-arrow {
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+  width: 45px;
+  height: 45px;
+  z-index: 999;
+  opacity: 0;
+  transform: translate3d(0, 40px, 1px);
+  pointer-events: none;
+  transition: var(--transition);
+  cursor: pointer;
+  @media (max-width: 1599px) {
+    right: 50px;
+    bottom: 50px;
+  }
+  @media (max-width: 767px) {
+    right: 30px;
+    bottom: 30px;
+  }
+  &:hover {
+    box-shadow: var(--shadow-black);
+  }
+  &.--show {
+    opacity: 1;
+    transform: none;
+    pointer-events: unset;
+  }
+  &__icon {
+    display: block;
+    fill: var(--bg-button-blue-2);
+  }
+}

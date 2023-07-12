@@ -1,0 +1,19 @@
+.benefits {
+  @media (max-width: 600px) {
+    padding-bottom: 50px;
+  }
+  &__description {
+    max-width: 1130px;
+  }
+  &__container {
+    @media (max-width: 600px) {
+      padding: 0;
+    }
+  }
+  &__content {
+    margin-top: 90px;
+    @media (max-width: 900px) {
+      margin-top: 70px;
+    }
+  }
+}

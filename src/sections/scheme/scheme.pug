@@ -1,0 +1,146 @@
+section.scheme.section
+  .container
+    h2.section__title.title.title--block 
+      | Схема 
+      span очистки
+  .scheme__content 
+    .scheme-block
+      .scheme-block__container.container
+        .scheme-block__head
+          .scheme-block__bg
+            img.scheme-block__line(loading="lazy" decoding="async" src="./images/scheme-line.jpg", alt="Кран")
+            img.scheme-block__crane(loading="lazy" decoding="async" src="./images/crane.png", alt="Труба с водой")
+          .swiper.scheme-block__slider
+            .swiper-wrapper.scheme-block__tabs
+              .swiper-slide.scheme-block__tab.--active(data-scheme-tab)
+                .scheme-block__tab-icon
+                  .scheme-block__tab-picture 
+                    img.scheme-block__tab-image(decoding="async" src="./images/filter-sediment-f.png" alt="Фильтр")
+                .scheme-block__tab-name.text.text--mini Седиментный
+              .swiper-slide.scheme-block__tab(data-scheme-tab)
+                .scheme-block__tab-icon
+                  .scheme-block__tab-picture 
+                    img.scheme-block__tab-image(decoding="async" src="./images/filter-granul-f.png" alt="Фильтр")
+                .scheme-block__tab-name.text.text--mini Гранулированный уголь
+              .swiper-slide.scheme-block__tab(data-scheme-tab)
+                .scheme-block__tab-icon
+                  .scheme-block__tab-picture 
+                    img.scheme-block__tab-image(decoding="async" src="./images/filter-ultra-f.png" alt="Фильтр")
+                .scheme-block__tab-name.text.text--mini Ультрафильтрационная мембрана
+              .swiper-slide.scheme-block__tab(data-scheme-tab)
+                .scheme-block__tab-icon
+                  .scheme-block__tab-picture 
+                    img.scheme-block__tab-image(decoding="async" src="./images/filter-coal-f.png" alt="Фильтр")
+                .scheme-block__tab-name.text.text--mini Прессованный угольный блок
+            .swiper-button-prev
+            .swiper-button-next
+          img.scheme-block__puri(loading="lazy" decoding="async" src="./images/scheme-fontan.jpg", alt="Фонтан")
+      .scheme-block__info
+        .scheme-block__arrow
+          .container
+            .scheme-block__arrow-el
+              .scheme-block__arrow-circle
+              .scheme-block__arrow-circle
+              .scheme-block__arrow-circle
+              img.scheme-block__arrow-icon(loading="lazy" decoding="async" src="./images/arrow.svg", alt="Стрелка")
+        ul.scheme-block__info-list
+          li.scheme-block__info-item(data-scheme-content style="max-height: unset;")
+            .container
+              .scheme-block__content
+                ul.scheme-block__list
+                  li.scheme-block__item
+                    .scheme-block__item-name.title.title--item Экологически безвредные
+                    p.scheme-block__item-description.text
+                      | Картридж предназначен для предварительной очистки воды от крупных частиц, 
+                      | песка, ила, ржавчины и трубной окалины. Материал изготовления - вспененный 
+                      | полипропилен. Снижает нагрузку на последующие фильтры.
+                  li.scheme-block__item
+                    .scheme-block__item-name.title.title--item Очищает от:
+                    ul.scheme-block__item-pictures
+                      li.scheme-block__item-picture
+                        img.scheme-block__item-picture-image(decoding="async" src="./images/scheme-sediment-01-01.jpg", alt="Ржавчина")
+                        .scheme-block__item-picture-name.text.text--mini Ржавчины
+                      li.scheme-block__item-picture
+                        img.scheme-block__item-picture-image(decoding="async" src="./images/scheme-sediment-01-02.jpg", alt="Песок")
+                        .scheme-block__item-picture-name.text.text--mini Песка
+                      li.scheme-block__item-picture
+                        img.scheme-block__item-picture-image(decoding="async" src="./images/scheme-sediment-01-03.jpg", alt="Трубная окалина")
+                        .scheme-block__item-picture-name.text.text--mini Трубной окалины
+                      li.scheme-block__item-picture
+                        img.scheme-block__item-picture-image(decoding="async" src="./images/scheme-sediment-01-04.jpg", alt="Ил")
+                        .scheme-block__item-picture-name.text.text--mini Ила
+          li.scheme-block__info-item(data-scheme-content style="max-height: 0px;")
+            .container
+              .scheme-block__content
+                ul.scheme-block__list
+                  li.scheme-block__item
+                    .scheme-block__item-name.title.title--item Гранулированный уголь
+                    p.scheme-block__item-description.text
+                      | Картридж с&nbsp;активированным гранулированным углем из&nbsp;скорлупы 
+                      | кокосовых орехов. Очищает воду от&nbsp;хлора и&nbsp;органических соединений, 
+                      | тяжелых металлов и&nbsp;обеспечивает бактериостатический эффект.
+                  li.scheme-block__item
+                    .scheme-block__item-name.title.title--item Очищает от:
+                    ul.scheme-block__item-pictures
+                      li.scheme-block__item-picture
+                        img.scheme-block__item-picture-image(decoding="async" src="./images/scheme-sediment-02-01.jpg", alt="Хлор")
+                        .scheme-block__item-picture-name.text.text--mini Хлор
+                      li.scheme-block__item-picture
+                        img.scheme-block__item-picture-image(decoding="async" src="./images/scheme-sediment-02-02.jpg", alt="Бензиновая пленка")
+                        .scheme-block__item-picture-name.text.text--mini Бензиновая пленка
+                      li.scheme-block__item-picture
+                        img.scheme-block__item-picture-image(decoding="async" src="./images/scheme-sediment-02-03.jpg", alt="Тяжелые металлы")
+                        .scheme-block__item-picture-name.text.text--mini Тяжелые металлы
+                      li.scheme-block__item-picture
+                        img.scheme-block__item-picture-image(decoding="async" src="./images/scheme-sediment-02-04.jpg", alt="Бактерии")
+                        .scheme-block__item-picture-name.text.text--mini Бактерии
+          li.scheme-block__info-item(data-scheme-content style="max-height: 0px;")
+            .container
+              .scheme-block__content
+                ul.scheme-block__list
+                  li.scheme-block__item
+                    .scheme-block__item-name.title.title--item Ультрафильтрационная мембрана
+                    p.scheme-block__item-description.text
+                      | Мембрана предназначена для тонкой очистки воды. Обаладает высокой селективностью 
+                      | и&nbsp;производительностью. Обеспечивает высокую степень очистки воды на&nbsp;молекулярном 
+                      | уровне до&nbsp;0,01&nbsp;микрон. Задерживает бактерии, микробы, водоросли, 
+                      | коллоидные примеси и&nbsp;органические соединения.
+                  li.scheme-block__item
+                    .scheme-block__item-name.title.title--item Очищает от:
+                    ul.scheme-block__item-pictures
+                      li.scheme-block__item-picture
+                        img.scheme-block__item-picture-image(decoding="async" src="./images/scheme-sediment-03-01.jpg", alt="Бактерии")
+                        .scheme-block__item-picture-name.text.text--mini Бактерии
+                      li.scheme-block__item-picture
+                        img.scheme-block__item-picture-image(decoding="async" src="./images/scheme-sediment-03-02.jpg", alt="Водоросли")
+                        .scheme-block__item-picture-name.text.text--mini Водоросли
+                      li.scheme-block__item-picture
+                        img.scheme-block__item-picture-image(decoding="async" src="./images/scheme-sediment-03-03.jpg", alt="Вирусы")
+                        .scheme-block__item-picture-name.text.text--mini Вирусы
+                      li.scheme-block__item-picture
+                        img.scheme-block__item-picture-image(decoding="async" src="./images/scheme-sediment-03-04.jpg", alt="Микробы")
+                        .scheme-block__item-picture-name.text.text--mini Микробы
+          li.scheme-block__info-item(data-scheme-content style="max-height: 0px;")
+            .container
+              .scheme-block__content
+                ul.scheme-block__list
+                  li.scheme-block__item
+                    .scheme-block__item-name.title.title--item Прессованный угольный блок
+                    p.scheme-block__item-description.text
+                      | Картридж с&nbsp;прессованным активированным углем в&nbsp;форме монолитного 
+                      | блока для финишной очистки воды. Картридж имеет повышенную адсорбционную емкость 
+                      | для токсичных и&nbsp;канцерогенных соединений, хлорорганических летучих соединений, 
+                      | нефтепродуктов и&nbsp;их&nbsp;соединений. Удаляет запах, цветность и&nbsp;улучшает 
+                      | вкусовые качества.
+                  li.scheme-block__item
+                    .scheme-block__item-name.title.title--item Очищает от:
+                    ul.scheme-block__item-pictures
+                      li.scheme-block__item-picture
+                        img.scheme-block__item-picture-image(decoding="async" src="./images/scheme-sediment-04-01.jpg", alt="Удаляет запах")
+                        .scheme-block__item-picture-name.text.text--mini Удаляет запах
+                      li.scheme-block__item-picture
+                        img.scheme-block__item-picture-image(decoding="async" src="./images/scheme-sediment-04-02.jpg", alt="Изменяет цветность")
+                        .scheme-block__item-picture-name.text.text--mini Изменяет цветность
+                      li.scheme-block__item-picture
+                        img.scheme-block__item-picture-image(decoding="async" src="./images/scheme-sediment-04-03.jpg", alt="Улучшает вкусовые качества")
+                        .scheme-block__item-picture-name.text.text--mini Улучшает вкусовые качества

@@ -1,0 +1,121 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 50px 0 30px;
+  opacity: 1;
+  transition: transform var(--transition), opacity var(--transition);
+  z-index: 999;
+  &.--show {
+    background-color: var(--white);
+    box-shadow: var(--shadow-black);
+    transition: box-shadow var(--transition), transform var(--transition), opacity var(--transition);
+  }
+  &.--scroll {
+    padding: 15px 0;
+  }
+  &.--hide {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform var(--transition), opacity var(--transition);
+  }
+  @media (max-width: 768px) {
+    padding: 30px 0;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 400px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+  }
+  &__links {
+    margin-right: 60px;
+    @media (max-width: 1279px) {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    white-space: nowrap;
+    line-height: 1;
+    @media (max-width: 1279px) {
+      align-items: flex-end;
+      flex-direction: column;
+    }
+    @media (max-width: 767px) {
+      font-size: 22px;
+    }
+    &:hover {
+      & .header__link-icon {
+        fill: var(--green);
+      }
+      & .link {
+        background-size: 100% 1px;
+      }
+    }
+    &.--email {
+      color: var(--text-color-gray-light);
+      font-size: 16px;
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
+      & .link {
+        @media (max-width: 1279px) {
+          margin-right: 5px;
+        }
+      }
+    }
+    &-icon {
+      display: none;
+      width: 30px;
+      height: 30px;
+      fill: var(--blue);
+      margin-right: 20px;
+      transform: translateY(2px);
+      transition: var(--transition);
+      @media (max-width: 400px) {
+        display: block;
+        width: 25px;
+        height: 25px;
+        margin-right: 0;
+        margin-bottom: 5px;
+        transform: translateY(-2px);
+      }
+    }
+    & .link {
+      @media (max-width: 1279px) {
+        //display: none;
+      }
+    }
+    &-name {
+      display: none;
+      @media (max-width: 1279px) {
+        //display: block;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      @media (max-width: 600px) {
+        font-size: 12px;
+      }
+      @media (max-width: 350px) {
+        font-size: 11px;
+      }
+    }
+  }
+  &__button {
+    @media (max-width: 1279px) {
+      display: none;
+    }
+  }
+}

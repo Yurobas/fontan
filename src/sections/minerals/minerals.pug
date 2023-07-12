@@ -1,0 +1,30 @@
+section.minerals.section
+  .container 
+    h2.section__title.title.title--section
+      | Полезная вода с 
+      span минералами
+    p.minerals__description.section__description.text
+      | Мы&nbsp;сохраняем силу природной воды, оставляя в&nbsp;ней магний, 
+      | кальций, натрий и&nbsp;калий. Это позволяет достигнуть натурального 
+      | баланса солей и&nbsp;минералов. Высокая степень очистки воды по&nbsp;нашей 
+      | технологии позволяет сохранить в&nbsp;ней полезные элементы без использования 
+      | консервантов.
+    .section__image.cloud-frame(data-parallax-minerals)
+      .cloud-frame__bg
+        img.cloud-frame__bg-image(data-parallax-minerals-bg src="./images/bg-minerals.jpg", alt="Горы с чистой водой")
+      //- img.cloud-frame__water(data-parallax-minerals-obj decoding="async" src="./images/minerals-water-line.png", alt="Вода")
+      img.cloud-frame__cloud(data-parallax-minerals-frame decoding="async" src="./images/cloud-frame.png", alt="Облака")
+      ul.minerals__list
+        li.minerals__item(data-parallax-minerals-1)
+          span Mg
+          span магний
+        li.minerals__item(data-parallax-minerals-2)
+          span Na
+          span натрий
+        li.minerals__item(data-parallax-minerals-3)
+          span Ca
+          span кальций
+        li.minerals__item(data-parallax-minerals-4)
+          span K
+          span калий
+  img.cloud-frame__mobile(decoding="async" src="./images/minerals-image-mobile.jpg", alt="Горы с чистой водой")

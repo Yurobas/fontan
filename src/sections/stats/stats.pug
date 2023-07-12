@@ -1,0 +1,39 @@
+section.stats.section.section--bigger(data-parallax-stats)
+  .container
+    .section__row
+      .section__block
+        .stats__parallax.desktop
+          img.stats__parallax-frame(data-parallax-stats-frame loading="lazy" decoding="async" src="./images/cloud-frame-mini.png", alt="Облака")
+          img.stats__parallax-bg(data-parallax-stats-bg loading="lazy" decoding="async" src="./images/stats-parallax-bg.jpg", alt="Улучшение экологии")
+          img.stats__parallax-obj.--first(data-parallax-stats-first loading="lazy" decoding="async" src="./images/stats-parallax-obj-01.png", alt="Оградительная лента")
+          img.stats__parallax-obj.--second(data-parallax-stats-second loading="lazy" decoding="async" src="./images/stats-parallax-obj-02.png", alt="Оградительная лента")
+      .section__block.--info
+        .stats__info
+          .stats__video
+            video(autoplay loop muted preload="auto" playsinline) 
+              source(src="./video/water.mp4" type="video/mp4")
+              source(src="./video/water.webm" type="video/webm")
+              | Элемент video не поддерживается вашим браузером.
+          .stats__item(data-stats-value="clients")
+            .stats__item-content
+              .stats__item-first
+                .stats__item-name Наши автоматы используют
+                .stats__item-value 800 000
+                .stats__item-count человек
+              .stats__item-second
+                .stats__item-name Наши автоматы используют
+                .stats__item-value 800 000
+                .stats__item-count человек
+          .stats__divine
+            .stats__divine-line
+          .stats__item(data-stats-value="bottles")
+            .stats__item-content
+              .stats__item-first
+                .stats__item-name Наши клиенты отказались от
+                .stats__item-value 1 640 000
+                .stats__item-count бутылок
+              .stats__item-second
+                .stats__item-name Наши клиенты отказались от
+                .stats__item-value 1 640 000
+                .stats__item-count бутылок
+  img.stats__mobile-image.mobile(data-parallax-stats-frame loading="lazy" decoding="async" src="./images/stats-mobile-image.jpg", alt="Грязная вода с пластиком")

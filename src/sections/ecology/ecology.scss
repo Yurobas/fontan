@@ -1,0 +1,203 @@
+.ecology {
+  position: relative;
+  & .desktop {
+    @media (max-width: 1279px) {
+      display: none;
+    }
+  }
+  & .mobile {
+    display: none;
+    @media (max-width: 1279px) {
+      display: block;
+    }
+  }
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    &-container {
+      position: relative;
+    }
+    &-cloud {
+      position: absolute;
+      left: 50%;
+      right: 0;
+      bottom: 0;
+      width: 100vw;
+      transform: translateX(-50%);
+    }
+    &-image {
+      width: 100%;
+      height: 100%;
+      max-width: unset;
+      object-fit: cover;
+    }
+  }
+  &__container {
+    position: relative;
+    z-index: 2;
+  }
+  &__title {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  &__content {
+    margin-top: 80px;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 450px;
+    &:last-of-type {
+      & .ecology__item-picture {
+        margin-bottom: 50px;
+      }
+    }
+  }
+  &__item {
+    position: relative;
+    width: calc(100% / 3);
+    padding: 40px;
+    background-color: var(--white);
+    transition: var(--transition);
+    &:hover {
+      box-shadow: var(--shadow-black);
+      z-index: 2;
+    }
+    &.--blue {
+      color: var(--white);
+      background-color: var(--bg-blue);
+      &:hover {
+        box-shadow: var(--shadow-blue);
+      }
+    }
+    &.--green {
+      color: var(--white);
+      background-color: var(--bg-green);
+      &:hover {
+        box-shadow: var(--shadow-green);
+      }
+    }
+    &-name {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.6;
+      text-align: center;
+    }
+    &-text {
+      max-width: 300px;
+      margin: 0 auto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 2;
+    }
+    &-picture {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 50px 0 30px;
+    }
+    &-composition {
+      position: relative;
+      & .ecology__item-image {
+        position: relative;
+        z-index: 2;
+      }
+      & .ecology__item-add {
+        position: absolute;
+        top: 5%;
+        left: 81%;
+        z-index: 1;
+      }
+    }
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    max-width: 775px;
+    margin: 120px auto;
+    padding: 50px;
+    background-color: var(--white);
+    transition: var(--transition);
+    &:hover {
+      box-shadow: var(--shadow-black);
+    }
+    &-icon {
+      width: 127px;
+      margin-right: 35px;
+    }
+    &-name {
+      margin-bottom: 20px;
+    }
+  }
+  &__mobile {
+    position: relative;
+    padding: 120px 0;
+    background: url('./images/ecology-mobile-bg.jpg') 50% 50% / cover no-repeat;
+    &-cloud {
+      position: absolute;
+      left: 50%;
+      max-width: unset;
+      &:first-of-type {
+        top: 0;
+        transform: translateX(-50%) rotate(180deg);
+      }
+      &:last-of-type {
+        bottom: 0;
+        transform: translateX(-50%);
+      }
+    }
+    & .swiper {
+      padding: 0 30px;
+      &:after,
+      &:before {
+        display: none;
+      }
+      &-wrapper {
+        align-items: center;
+      }
+    }
+    &-item {
+      padding: 45px 30px 40px;
+      background-color: var(--white);
+      overflow: hidden;
+      &-name {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      &-picture {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 260px;
+      }
+      &-image {
+        max-height: 100%;
+        &.--icon {
+          max-width: 50%;
+        }
+      }
+      &-composition {
+        position: relative;
+        & .ecology__mobile-item-image {
+          position: relative;
+          z-index: 2;
+        }
+        & .ecology__mobile-item-add {
+          position: absolute;
+          top: 5%;
+          left: 81%;
+          z-index: 1;
+        }
+      }
+      &-text {
+        margin-top: 30px;
+      }
+    }
+  }
+}

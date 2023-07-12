@@ -1,0 +1,104 @@
+section.firewall.section
+  .firewall__bg
+    .firewall__bg-container
+      .firewall__bg-title.title.title--section Гарантировано - безопасно!
+      img.firewall__bg-image.desktop(loading="lazy" decoding="async" src="./images/bg-firewall.jpg", alt="Горы в облаках")
+      img.firewall__bg-image.mobile(loading="lazy" decoding="async" src="./images/bg-firewall-mobile.jpg", alt="Горы в облаках")
+      img.firewall__bg-cloud.--top(loading="lazy" decoding="async" src="./images/cloud-firewall-top.png", alt="Облако")
+      img.firewall__bg-cloud.--bottom(loading="lazy" decoding="async" src="./images/cloud-firewall-bottom.png", alt="Облако")
+  .firewall__container.container
+    .firewall__info
+      .firewall__head 
+        img.firewall__head-icon(loading="lazy" decoding="async" src="./images/covid.svg", alt="COVID Secure")
+        .firewall__head-info 
+          h2.firewall__head-title.title.title--block
+            | Уникальная технология 
+            span Firewall
+          p.firewall__description.text.desktop
+            | &laquo;Единственная в&nbsp;мире технология, обеспечивающая безопасность 
+            | от&nbsp;всех микроорганизмов, включая ковид, протестировано европейскими 
+            | и&nbsp;американскими технологиями&raquo;
+      p.firewall__description.text.mobile
+        | &laquo;Единственная в&nbsp;мире технология, обеспечивающая безопасность 
+        | от&nbsp;всех микроорганизмов, включая ковид, протестировано европейскими 
+        | и&nbsp;американскими технологиями&raquo;
+      p.firewall__description.text.normal
+        | Доказано: Firrewall эффективен против 
+        span.nbsp COVID-19!
+      p.firewall__description.text
+        | Мы&nbsp;используем в&nbsp;нашем 
+        | оборудовании ультрафиолетовые системы обеззараживания воды, которые на&nbsp;сегодняшний 
+        | день являются наиболее безопасной и&nbsp;эффективной технологией для обработки питьевой воды. 
+        | Перед тем, как попасть в&nbsp;Вашу кружку, вода проходит ультрафиолетовую очистку от&nbsp;вирусов.
+    .firewall__scheme
+      .firewall__scheme-block
+        img.firewall__scheme-image(src="./images/firewall-scheme-01.png", alt="")
+        ul.firewall__scheme-viruses
+          li.firewall__scheme-virus
+            .firewall__scheme-virus-picture
+              img.firewall__scheme-virus-image(src="./images/firewall-scheme-virus-01.png", alt="Кишечная палочка")
+            p.firewall__scheme-virus-name.text.text--mini Кишечная палочка
+          li.firewall__scheme-virus
+            .firewall__scheme-virus-picture
+              img.firewall__scheme-virus-image(src="./images/firewall-scheme-virus-02.png", alt="Сальмонелла")
+            p.firewall__scheme-virus-name.text.text--mini Сальмонелла
+          li.firewall__scheme-virus
+            .firewall__scheme-virus-picture
+              img.firewall__scheme-virus-image(src="./images/firewall-scheme-virus-03.png", alt="Аденовирус")
+            p.firewall__scheme-virus-name.text.text--mini Аденовирус
+        ul.firewall__scheme-viruses
+          li.firewall__scheme-virus
+            .firewall__scheme-virus-picture
+              img.firewall__scheme-virus-image(src="./images/firewall-scheme-virus-04.png", alt="Палочка сальмонеллы")
+            p.firewall__scheme-virus-name.text.text--mini Палочка сальмонеллы
+          li.firewall__scheme-virus
+            .firewall__scheme-virus-picture
+              img.firewall__scheme-virus-image(src="./images/firewall-scheme-virus-05.png", alt="Ротавирус")
+            p.firewall__scheme-virus-name.text.text--mini Ротавирус
+          li.firewall__scheme-virus
+            .firewall__scheme-virus-picture
+              img.firewall__scheme-virus-image(src="./images/firewall-scheme-virus-06.png", alt="Шигелла")
+            p.firewall__scheme-virus-name.text.text--mini Шигелла
+      .firewall__scheme-block
+        img.firewall__scheme-image(src="./images/firewall-scheme-02.gif", alt="")
+        .firewall__scheme-info
+          h5.firewall__scheme-info-title.title.title--element Firewall удаляет
+            span.title.title--item 99,9999% бактерий и&nbsp;99,99% вирусов
+          .firewall__scheme-info-circle
+          .firewall__scheme-info-circle
+          ul.firewall__scheme-info-list 
+            li.firewall__scheme-info-item 
+              span.title.title--element Mg
+              span.text магний
+              span 
+            li.firewall__scheme-info-item 
+              span.title.title--element Ca
+              span.text кальций
+              span 
+            li.firewall__scheme-info-item 
+              span.title.title--element Na
+              span.text натрий
+              span 
+            li.firewall__scheme-info-item 
+              span.title.title--element K
+              span.text калий
+              span 
+    .firewall__list 
+      +content([
+        {
+          name: 'Механизм технологии <span>BioCote®</span>',
+          description: [
+            {
+              text: `
+                Действует 24 часа в сутки, обеспечивая непрерывную антибактериальную защиту.
+              `
+            }
+          ],
+          video: [
+            './video/biocote.mp4',
+            './video/biocote.webm'
+          ],
+          image: './images/biocote.jpg',
+          alt: 'BioCote'
+        }
+      ])

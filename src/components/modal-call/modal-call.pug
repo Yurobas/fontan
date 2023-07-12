@@ -1,0 +1,41 @@
+.modal#call
+  .modal__container.container
+    .modal__content
+      .modal__close(title="Закрыть")
+        svg.modal__close-icon(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" xml:space="preserve")
+          g(transform="translate(128 128) scale(0.72 0.72)")
+            g(transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)")
+              path(d="M 3 90 c -0.768 0 -1.536 -0.293 -2.121 -0.879 c -1.172 -1.171 -1.172 -3.071 0 -4.242 l 84 -84 c 1.172 -1.172 3.07 -1.172 4.242 0 c 1.172 1.171 1.172 3.071 0 4.242 l -84 84 C 4.536 89.707 3.768 90 3 90 z" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round")
+              path(d="M 87 90 c -0.768 0 -1.535 -0.293 -2.121 -0.879 l -84 -84 c -1.172 -1.171 -1.172 -3.071 0 -4.242 c 1.171 -1.172 3.071 -1.172 4.242 0 l 84 84 c 1.172 1.171 1.172 3.071 0 4.242 C 88.535 89.707 87.768 90 87 90 z" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round")
+      .modal__form 
+        .form 
+          form.form__el(action="#0" method="post")
+            .form__content
+              .form__response
+                .form__response-icon
+                    span.form__response-icon-tip
+                    span.form__response-icon-long
+                .form__response-title.title.title--item Заявка успешно отправлена
+                p.form__response-description text
+              .form__name.title.title--item Заказать звонок
+              label.form__label.--name
+                input.form__input(type="text" name="VodaWelcomeForm[name]")
+                .form__placeholder Имя
+                .form__error Доступны только буквы
+              label.form__label.--phone
+                input.form__input(type="text" name="VodaWelcomeForm[phone]")
+                .form__placeholder Телефон
+                .form__error Проверьте номер телефона
+              label.form__label.--email
+                input.form__input(type="text" name="VodaWelcomeForm[email]")
+                .form__placeholder E-mail
+                .form__error Некорректная почта
+              button.form__button.button.button--blue(type="submit") Отправить
+              .form__policy 
+                label.form__checkbox
+                  input.form__checkbox-input(type="checkbox" name="VodaWelcomeForm[policy]" checked)
+                  .form__checkbox-body
+                    svg.form__checkbox-icon(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 417 323.8" style="enable-background:new 0 0 417 323.8;" xml:space="preserve")
+                      path(d="M159.7,317.6c-4,4-9.4,6.2-15.1,6.2s-11.1-2.2-15.1-6.2L9.4,197.3c-12.5-12.5-12.5-32.7,0-45.2l15.1-15.1 c12.5-12.5,32.7-12.5,45.2,0l75.1,75.1L347.4,9.4c12.5-12.5,32.7-12.5,45.2,0l15.1,15.1c12.5,12.5,12.5,32.7,0,45.2L159.7,317.6z")
+                a.form__policy-text(href="https://www.ekodar.ru/privacy-policy/" target="_blank")
+                  span.link Я принимаю условия передачи информации

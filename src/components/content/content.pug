@@ -1,0 +1,24 @@
+mixin content(items)
+  ul.content 
+    each item in items 
+      li.content__item 
+        .content__info
+          svg.content__info-triangle(viewbox="0 0 480 50" preserveAspectRatio="none")
+            polygon(points="0,0 480,0 0,50")
+          h3.content__name.title.title--block!= item.name
+          each info in item.description
+            if info.text
+              p.content__description.text= info.text
+            else if info.list 
+              ul.content__list.list
+                each point in info.list 
+                  li.list__item.text= point
+        if !item.video
+          .content__picture
+            img.content__image(src=item.image, alt=item.alt loading="lazy" decoding="async")
+        else
+          .content__picture
+            video.content__video(autoplay loop muted preload="auto" poster=item.image)
+              each video in item.video
+                source(src=video)
+                | Элемент video не поддерживается вашим браузером.

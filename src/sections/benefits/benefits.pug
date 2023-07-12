@@ -1,0 +1,58 @@
+section.benefits.section.section--bigger(data-parallax-benefits)
+  .container 
+    h2.section__title.title.title--block
+      | Безопасная, 
+      span полезная
+      | , безлимитная, удобная
+    p.benefits__description.section__description.text
+      | Пурифайер&nbsp;&mdash; это современная альтернатива кулеру, где проточная 
+      | вода очищается при помощи встроенной системы фильтрации. Это наиболее выгодный 
+      | и&nbsp;удобный способ получения чистой, полезной и&nbsp;безлимитной питьевой воды 
+      | в&nbsp;любое время.
+    .section__image.cloud-frame
+      .cloud-frame__bg
+        img.cloud-frame__bg-image(data-parallax-benefits-bg src="./images/bg-benefits.jpg", alt="Офис с пурифайером" decoding="async")
+      img.cloud-frame__cloud(data-parallax-benefits-frame src="./images/cloud-frame.png", alt="Облака" decoding="async")
+  img.cloud-frame__mobile(decoding="async" src="./images/benefits-image-mobile.jpg", alt="Горы с чистой водой")
+  .benefits__container.container
+    .benefits__content
+      +content([
+        {
+          name: 'Легко<br> использовать',
+          description: [
+            {
+              text: `
+                Пурифайеры Ecomaster полностью автоматические.
+              `
+            },{
+              text: `
+                Для подачи воды вам нужно всего лишь нажать на кнопку, сенсорную панель или повернуть шайбу.
+              `
+            }
+          ],
+          image: './images/benefits-01.jpg',
+          alt: 'Пурифайер Экомастер WL-7 Top'
+        },{
+          name: 'Не забывайте<br> про <span>каплесборник</span>!',
+          description: [
+            {
+              text: `
+                Пожалуйста, вовремя опустошайте каплесборник во избежание перелива и аварийного отключения устройства.
+              `
+            },{
+              text: `Обслуживание каплесборника:`
+            },{
+              list: [
+                'Снимите каплесборник и вылейте из него воду.',
+                'Установите каплесборник на место.'
+              ]
+            }
+          ],
+          video: [
+            './video/drop.mp4',
+            './video/drop.webm'
+          ],
+          image: './images/benefits-02.jpg',
+          alt: 'Пурифайер Экомастер WL-7'
+        }
+      ])

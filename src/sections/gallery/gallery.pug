@@ -1,0 +1,21 @@
+section.gallery.section.section--bigger
+    .container
+        .gallery__content
+            .gallery__row.section__row
+                h2.section__title.title.title--block
+                    span.blue Галерея 
+                    | проектов:
+            .gallery__slider
+                .swiper 
+                    .swiper-wrapper 
+                        .swiper-slide 
+                            img.gallery__image(src="./images/gallery-01.jpg" alt="Фото проекта")
+                        .swiper-slide 
+                            img.gallery__image(src="./images/gallery-02.jpg" alt="Фото проекта")
+                        .swiper-slide 
+                            img.gallery__image(src="./images/gallery-03.jpg" alt="Фото проекта")
+                ul.gallery__controls
+                    li.gallery__arrow.--prev
+                        .gallery__button.swiper-button-prev
+                    li.gallery__arrow.--next
+                        .gallery__button.swiper-button-next

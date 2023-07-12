@@ -1,0 +1,125 @@
+.planet {
+  position: relative;
+  width: 100%;
+  height: 749px;
+  padding: 0;
+  overflow: hidden;
+  @media (max-width: 600px) {
+    height: 850px;
+  }
+  & .container {
+    position: relative;
+    height: 100%;
+    z-index: 2;
+  }
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    &-cosmos {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100vw;
+      transform: translate3d(-50%, -50%, 1px);
+      z-index: 0;
+      @media (max-width: 1279px) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-planet {
+      position: absolute;
+      top: 20%;
+      left: 45%;
+      max-width: 50vw;
+      transform: rotate(-45deg);
+      z-index: 2;
+      &.--active {
+        opacity: 1;
+        @media (max-width: 1279px) {
+          transform: rotate(-45deg);
+          transition: var(--transition-long);
+        }
+        @media (max-width: 768px) {
+          transform: translate(25%, 45%)rotate(-45deg);
+        }
+        @media (max-width: 600px) {
+          transform: translate(25%, 35%)rotate(-45deg);
+        }
+        @media (max-width: 500px) {
+          transform: translate(25%, 20%)rotate(-45deg);
+        }
+      }
+      @media (max-width: 1279px) {
+        opacity: 0;
+        max-width: 100%;
+        top: 35%;
+        left: 35%;
+        transform: translate3d(0, 100px, 1px) rotate(-45deg);
+      }
+      @media (max-width: 900px) {
+        top: 40%;
+      }
+      @media (max-width: 768px) {
+        top: unset;
+        right: 0;
+        left: unset;
+        bottom: 0;
+        transform: translate(25%, calc(45% + 100px)) rotate(-45deg);
+      }
+      @media (max-width: 600px) {
+        max-width: 130%;
+        transform: translate(25%, calc(35% + 100px)) rotate(-45deg);
+      }
+      @media (max-width: 500px) {
+        transform: translate(25%, calc(20% + 100px)) rotate(-45deg);
+      }
+    }
+    &-cloud {
+      position: absolute;
+      left: 50%;
+      right: 0;
+      width: 100vw;
+      transform: translateX(-50%);
+      z-index: 3;
+      @media (max-width: 1279px) {
+        width: unset;
+        max-width: unset;
+      }
+      &.--top {
+        top: 0;
+      }
+      &.--bottom {
+        bottom: 0;
+      }
+    }
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+    @media (max-width: 1279px) {
+      width: 55%;
+    }
+    @media (max-width: 768px) {
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+      margin-top: 230px;
+    }
+  }
+  &__content {
+    max-width: 510px;
+    color: var(--white);
+  }
+  &__title {
+    margin-bottom: 35px;
+  }
+}

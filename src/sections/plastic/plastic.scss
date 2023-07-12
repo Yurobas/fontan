@@ -1,0 +1,52 @@
+.plastic {
+  padding-top: 60px;
+  padding-bottom: 130px;
+  @media (max-width: 600px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  &__title {
+    max-width: 870px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__mobile {
+    &-image {
+      margin: 0 auto;
+    }
+  }
+  &__content {
+    margin-top: 70px;
+    @media (max-width: 768px) {
+      margin-top: 0;
+    }
+  }
+  &__parallax {
+    position: relative;
+    min-width: 740px;
+    overflow: hidden;
+    @media (max-width: 768px) {
+      min-width: unset;
+    }
+    &-frame {
+      position: relative;
+      z-index: 3;
+    }
+    &-bg {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      max-width: unset;
+      transform: translate(-50%, 0);
+      transition: var(--transition-parallax);
+      z-index: 1;
+    }
+    &-obj {
+      position: absolute;
+      top: 20%;
+      left: 90px;
+      transition: var(--transition-parallax);
+      z-index: 2;
+    }
+  }
+}
