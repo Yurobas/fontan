@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (checkScreenSize() > 1279) {
     parallaxMinerals();
     parallaxPlanet();
-    parallaxHero();
+    //parallaxHero();
   }
 
   function parallaxMinerals() {
@@ -208,13 +208,13 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 
-  function parallaxHero() {
+  +function parallaxHero() {
     const layer1 = document.querySelector('[data-scroll-parallax-hero-1]');
     const layer2 = document.querySelector('[data-scroll-parallax-hero-2]');
     //const layer3 = document.querySelector('[data-scroll-parallax-hero-3]');
     
     document.addEventListener('scroll', event => {
-      if (checkScreenSize() > 1279) {
+      if (checkScreenSize() >= 768) {
         let step = pageYOffset / 100;
         requestAnimationFrame(() => {
           requestAnimationFrame(() => {
@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
       }
     })
-  }
+  }();
 
   // Модалки
   +function modals() {

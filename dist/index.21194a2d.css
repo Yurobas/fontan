@@ -1,20 +1,20 @@
 @font-face {
   font-family: AngleciaPro;
-  src: url("Angleciaprodisplayregular.7199ba8d.ttf") format("truetype");
+  src: url("Angleciaprodisplayregular.c468c73c.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: AngleciaProItalic;
-  src: url("Angleciaprodisplayitalic.21413045.ttf") format("truetype");
+  src: url("Angleciaprodisplayitalic.5a0ae07c.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: Ubuntu;
-  src: url("Ubuntu-Regular.7dcb1b04.ttf") format("truetype");
+  src: url("Ubuntu-Regular.fad1e2f5.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -1706,7 +1706,7 @@ button {
 }
 
 .footer {
-  background: url("bg-footer.41e4c145.jpg") 50% 50% / cover var(--bg-footer) no-repeat;
+  background: url("bg-footer.ce04d4f0.jpg") 50% 50% / cover var(--bg-footer) no-repeat;
   color: var(--white);
   z-index: 0;
   padding: 250px 0 85px;
@@ -1893,14 +1893,14 @@ button {
 @media (max-width: 767px) {
   .hero {
     height: 950px;
-    background: url("bg-hero-fontan-tablet.00e30e1f.jpg") 50% 100% / cover var(--white) no-repeat;
+    background: url("bg-hero-fontan-tablet.0f2a6c3f.jpg") 50% 100% / cover var(--white) no-repeat;
   }
 }
 
 @media (max-width: 480px) {
   .hero {
     height: 950px;
-    background: url("bg-hero-fontan-mobile.76d3f8c0.jpg") 50% 100% / cover var(--white) no-repeat;
+    background: url("bg-hero-fontan-mobile.28c41991.jpg") 50% 100% / cover var(--white) no-repeat;
   }
 }
 
@@ -3652,7 +3652,7 @@ button {
 }
 
 .ecology__mobile {
-  background: url("ecology-mobile-bg.0636e9f5.jpg") 50% / cover no-repeat;
+  background: url("ecology-mobile-bg.166eca52.jpg") 50% / cover no-repeat;
   padding: 120px 0;
   position: relative;
 }
@@ -4113,4 +4113,4 @@ button {
   text-align: center;
 }
 
-/*# sourceMappingURL=index.ce1d6491.css.map */
+/*# sourceMappingURL=index.21194a2d.css.map */

@@ -4,19 +4,22 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 186.844px;
-  //background: url('./images/bg-hero-sky.png') 50% 50% / cover var(--white) no-repeat;
   @media (max-width: 768px) {
     padding-top: 113px;
+  }
+  @media (max-width: 767px) {
+    height: 950px;
+    background: url('./images/bg-hero-fontan-tablet.jpg') 50% 100% / cover var(--white) no-repeat;
+  }
+  @media (max-width: 480px) {
+    height: 950px;
+    background: url('./images/bg-hero-fontan-mobile.jpg') 50% 100% / cover var(--white) no-repeat;
   }
   @media (max-width: 425px) {
     padding-top: 110px;
   }
   @media (max-width: 400px) {
     padding-top: 105px;
-  }
-  @media (max-width: 767px) {
-    height: 950px;
-    //background: url('./images/bg-hero-mobile.jpg') 50% 100% / cover var(--white) no-repeat;
   }
   &__content {
     position: relative;
@@ -58,12 +61,22 @@
   }
   &__title {
     max-width: 900px;
+    @media (max-width: 1279px) {
+      max-width: 520px;
+    }
+    @media (max-width: 480px) {
+      font-size: 24px;
+    }
   }
   &__button {
     display: none;
     @media (max-width: 1279px) {
       display: inline-block;
-      margin-top: 40px;
+      margin-top: 20px;
+    }
+    @media (max-width: 480px) {
+      display: inline-block;
+      margin-top: 30px;
     }
   }
   &__bg {
@@ -82,12 +95,20 @@
   &__fontan {
     position: fixed;
     left: 60%;
-    bottom: -15%;
+    bottom: -20%;
     transform: translate3d(0%, 0, 1);
     will-change: transform;
     //z-index: 2;
-    @media (min-height: 1024px) {
-      bottom: 0;
+    @media (max-width: 1599px) {
+      left: 55%;
+    }
+    @media (max-width: 1279px) {
+      width: 450px;
+      bottom: -5%;
+    }
+    @media (max-width: 1023px) {
+      width: 400px;
+      bottom: 0%;
     }
   }
   &__sky {
@@ -144,7 +165,8 @@
   &__cloud,
   &__mountains,
   &__sky,
-  &__fontan {
+  &__fontan,
+  &__bg {
     @media (max-width: 767px) {
       display: none;
     }
