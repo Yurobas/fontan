@@ -67,6 +67,9 @@
     @media (max-width: 480px) {
       font-size: 24px;
     }
+    @media (min-height: 1080px) {
+      margin-top: 50px;
+    }
   }
   &__button {
     display: none;
