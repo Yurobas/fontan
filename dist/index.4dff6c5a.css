@@ -2009,6 +2009,12 @@ button {
   transform: translate3d(-50%, 0, 1px);
 }
 
+@media (min-height: 1080px) {
+  .hero__bg {
+    bottom: 0;
+  }
+}
+
 @media (max-width: 1600px) {
   .hero__bg {
     bottom: 0;
@@ -4118,4 +4124,4 @@ button {
   text-align: center;
 }
 
-/*# sourceMappingURL=index.cb1bf0fe.css.map */
+/*# sourceMappingURL=index.4dff6c5a.css.map */

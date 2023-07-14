@@ -86,6 +86,9 @@
     transform: translate3d(-50%, 0, 1);
     will-change: transform;
     //z-index: 1;
+    @media (min-height: 1080px) {
+      bottom: 0;
+    }
     @media (max-width: 1600px) {
       left: 30%;
       bottom: 0;
